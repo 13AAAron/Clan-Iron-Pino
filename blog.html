@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – CLAN IRON PINO</title>
+  <link rel="stylesheet" href="styles/Style.css">
+  <link rel="stylesheet" href="styles/Layout.css">
+  <link rel="stylesheet" href="styles/Typography.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="immagini/favicon.png" type="image/png">
+  <style>
+    .blog-post {
+      display: flex;
+      align-items: center;
+      background-color: #f2f2f2;
+      border-radius: 12px;
+      padding: 1.5rem;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .blog-post img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .blog-post-content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-left">
+         <a href="blog.html" class="active">BLOG</a>
+         <a href="chi-siamo.html">CHI SIAMO</a>
+      </div>
+      <div class="nav-logo-centered">
+         <a href="Index.html"><img src="immagini/logo.png" alt="CLAN IRON PINO Logo"></a>
+      </div>
+      <div class="nav-right">
+         <a href="dove-trovarci.html">DOVE TROVARCI</a>
+         <a href="allenatori.html">ALLENATORI</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section blog">
+    <h1>Blog</h1>
+    <p>Approfondimenti, eventi, consigli e storie dalla nostra associazione.</p>
+
+    <article class="blog-post">
+      <img src="immagini/post-tester.png" alt="Immagine post di prova">
+      <div class="blog-post-content">
+        <h2>📝 Test 1 – Post di prova</h2>
+        <p><em>Pubblicato il 8 maggio 2025</em></p>
+        <p>Questo è un semplice post dimostrativo per testare il layout e l’impostazione grafica del nostro blog. Nei prossimi giorni pubblicheremo aggiornamenti reali su eventi, allenamenti e novità del Clan.</p>
+        <a href="#" class="link-arrow">Leggi tutto →</a>
+      </div>
+    </article>
+
+  </main>
+
+   <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="dove-trovarci.html">Dove trovarci</a>
+          <a href="allenatori.html">Allenatori</a>
+        </div>
+        <div class="footer-languages">
+          <p>Scegli lingua:</p>
+          <a href="blog.html" title="Italiano">🇮🇹 Italiano</a>
+          <a href="blog-de.html" title="Deutsch">🇩🇪 Deutsch</a>
+          <a href="blog-en.html" title="English">🇬🇧 English</a>
+        </div>
+        <br>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 CLAN IRON PINO. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

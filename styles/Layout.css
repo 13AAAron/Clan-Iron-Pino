@@ -1,0 +1,144 @@
+/* Layout.css - Struttura delle sezioni principali */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-logo-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.nav-logo-centered img {
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+/* Adattamento per dispositivi mobili */
+@media (max-width: 600px) {
+  .nav-logo-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-90%);
+  z-index: 10;
+}
+  .nav-logo-centered img {
+    max-width: 100px;
+  }
+}
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100vh - 300px);
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  width: 90%;
+  backdrop-filter: blur(4px);
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.coaches-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.coach-card {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLAN IRON PINO</title>
+  <link rel="stylesheet" href="styles/Style.css">
+  <link rel="stylesheet" href="styles/Layout.css">
+  <link rel="stylesheet" href="styles/Typography.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="immagini/favicon.png" type="image/png">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      width: 100%;
+    }
+    .about {
+      background-color: #eaeaea;
+      padding: 4rem 2rem;
+      color: #222;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .about a {
+      color: #c2a66e;
+    }
+    .schedule-section {
+      background-color: #f4f4f4;
+      padding: 4rem 2rem;
+      border-radius: 0;
+      width: 100%;
+    }
+    .schedule-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .schedule-card {
+      background-color: white;
+      border-radius: 15px;
+      padding: 2rem;
+      flex: 1 1 250px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+    .schedule-card img {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-left">
+         <a href="blog-en.html" class="active">BLOG</a>
+         <a href="chi-siamo-en.html">ABOUT US</a>
+      </div>
+      <div class="nav-logo-centered">
+         <a href="Index-en.html"><img src="immagini/logo.png" alt="CLAN IRON PINO Logo"></a>
+      </div>
+      <div class="nav-right">
+         <a href="dove-trovarci-en.html">LOCATION</a>
+         <a href="allenatori-en.html">COACHES</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-image-container">
+      <img src="immagini/hero-banner.png" alt="CLAN IRON PINO training" class="hero-image">
+      <div class="hero-text">
+        <h1>Build your character with every strike</h1>
+        <p>CLAN IRON PINO is your go-to place in Bolzano for kickboxing and boxing.</p>
+        <a href="#corsi" class="cta-button">Discover our courses</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="section about">
+    <h2>About us</h2>
+    <p>CLAN IRON PINO is a sports association founded to shape athletes with discipline, determination, and team spirit. Our goal is not only to train fighters, but to develop aware and resilient individuals.</p>
+    <a href="chi-siamo.html" class="link-arrow">Learn more →</a>
+  </section>
+
+  <section id="allenatori" class="section coaches">
+    <h2>Our Coaches</h2>
+    <div class="coaches-container">
+      <div class="coach-card">
+        <img src="immagini/headcoach-jacopo.png" alt="Head Coach Jacopo">
+        <h3>Jacopo Bianconcini</h3>
+        <p><strong>Head Coach</strong><br>Founder and technical director of the association. Former national champion, coach with over 15 years of experience.</p>
+      </div>
+      <div class="coach-card">
+        <img src="immagini/coach-anghel.png" alt="Coach Anghel">
+        <h3>Anghel Chavdarov</h3>
+        <p><strong>Coach</strong><br>K-1 Pro Fighter, athletic trainer, and nutrition coach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="orari" class="section schedule-section">
+    <h2 style="text-align:center">Training Schedule</h2>
+    <div class="schedule-cards">
+      <div class="schedule-card">
+        <img src="immagini/icon-bambini.png" alt="Kids Icon">
+        <h3>Kids (up to 14 years old)</h3>
+        <p>15:00 - 17:00</p>
+      </div>
+      <div class="schedule-card">
+        <img src="immagini/icon-giovani.png" alt="Teens Icon">
+        <h3>Teens (up to 17 years old)</h3>
+        <p>17:00 - 19:00</p>
+      </div>
+      <div class="schedule-card">
+        <img src="immagini/icon-adulti.png" alt="Adults Icon">
+        <h3>Adults</h3>
+        <p>09:00 - 12:00<br>19:00 - 21:00</p>
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-links">
+          <a href="index-en.html">Home</a>
+          <a href="blog-en.html">Blog</a>
+          <a href="chi-siamo-en.html">About us</a>
+          <a href="dove-trovarci-en.html">Location</a>
+          <a href="allenatori-en.html">Coaches</a>
+        </div>
+        <div class="footer-languages">
+          <p>Choose language:</p>
+          <a href="Index.html" title="Italian">🇮🇹 Italiano</a>
+          <a href="index-de.html" title="German">🇩🇪 Deutsch</a>
+          <a href="index-en.html" title="English">🇬🇧 English</a>
+        </div>
+        <br>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 CLAN IRON PINO. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

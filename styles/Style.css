@@ -1,0 +1,116 @@
+/* Style.css - Colori, bottoni, immagini, stile visivo */
+
+:root {
+  --green-italy: #008C45;
+  --white-italy: #ffffff;
+  --red-italy: #CD212A;
+  --matte-black: #1a1a1a;
+  --sand: #D8C3A5;
+  --text-gray: #4a4a4a;
+  --light-sand: #f5f0e6;
+}
+
+body {
+  background-color: var(--white-italy);
+  color: var(--text-gray);
+  margin: 0;
+  padding: 0;
+}
+
+.site-header {
+  background: linear-gradient(to right, var(--green-italy), var(--white-italy), var(--red-italy));
+  padding: 1rem 2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--matte-black);
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--red-italy);
+}
+
+.nav-logo-centered {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-logo-centered img {
+  height: 60px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f7f3e8; /* bianco osso */
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  max-width: 90%;
+  backdrop-filter: blur(4px);
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--red-italy);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a51b1b;
+}
+
+.link-arrow {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #c2a66e;
+  text-decoration: none;
+}
+
+.link-arrow:hover {
+  text-decoration: underline;
+}
+
+.coach-card img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.footer {
+  background-color: var(--matte-black);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--sand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
